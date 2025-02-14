@@ -43,6 +43,12 @@ The system stores authentication information in an SQLite database and uses JSON
 
 The `index.php` file is the main entry point. It retrieves the necessary information, parses arguments, and handles authentication requests.
 
+
+Example of use : 
+```bash
+    ./php -S localhost:8000 -c php.ini
+```
+
 ### Authentication Requests
 
 To validate a key, the `key` argument must be passed in the request. For example:

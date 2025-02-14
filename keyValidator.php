@@ -27,7 +27,7 @@
         	!$data ? Utils::throwError("Invalid key") : null;
 
         	$encryptionValue = shell_exec("lua lua/rsa.lua encrypt " . escapeshellarg($data['signature']) . " 2>&1");
-        	echo json_encode(["encrypted_signature" => $encryptionValue]);
+        	echo $encryptionValue;
     	}
 	}
 ?>

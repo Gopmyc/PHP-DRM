@@ -18,6 +18,7 @@
         	!$key ? Utils::throwError("Missing key parameter") : null;
         	$decryptionValue = shell_exec("lua lua/rsa.lua decrypt " . escapeshellarg($key) . " 2>&1");
         	!$decryptionValue ? Utils::throwError("Decryption failed") : null;
+			echo $decryptionValue;
         	$decryptionValue = trim($decryptionValue);
 
         	$stmt = $this->db->prepare("SELECT signature FROM clients WHERE key = ?");

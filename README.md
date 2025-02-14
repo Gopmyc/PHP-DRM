@@ -14,6 +14,7 @@ The system stores authentication information in an SQLite database and uses JSON
 ├── keyValidator.php     # Key authentication validation
 ├── setup.php            # Project installation and initialization
 ├── utils.php            # Utility functions
+├── php.ini              # Utility php libraries
 ├── replit.nix           # Configuration for the Replit environment
 └── lua/
     ├── rsa.lua          # Lua script for RSA encryption
@@ -25,15 +26,16 @@ The system stores authentication information in an SQLite database and uses JSON
 
 ## Dependencies
 
-- **PHP** 8.2 (or higher)
-- **Lua** 5.1
+- **PHP** 8.2 (or higher) [php](https://www.php.net/releases/8.2/en.php)
+- **Lua** 5.1 [lua](https://www.lua.org/source/5.1/)
 
 ## Installation
 
 1. Clone the repository or download the files.
 2. Install the required dependencies for PHP and Lua on your system.
 3. Run the `setup.php` script to initialize the project. This will create the `data/` and `key/` directories, along with the necessary files (`client.db`, `private.json`, `public.json`).
-4. Yu can delete the `data/` and `key/` folders to regenerate new ones if needed (they will be generated when the server is launched).
+4. You can delete the `data/` and `key/` folders to regenerate new ones if needed (they will be generated when the server is launched).
+5. You can modify constant references in config.php to use environment tools, such as the `lua` entry point
 
 ## Usage
 

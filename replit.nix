@@ -1,6 +1,6 @@
 { pkgs }: {
 	deps = [
-   pkgs.lua5_1
+   pkgs.lua51Packages.lua
 		pkgs.php82
 	];
 }

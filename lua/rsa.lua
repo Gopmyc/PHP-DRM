@@ -1,5 +1,5 @@
-local json		=	require "libraries/json"
-local base64	=	require "libraries/base64"
+local json		=	require "lua/libraries/json"
+local base64	=	require "lua/libraries/base64"
 
 local function fl(x)
 if x < 0 then
